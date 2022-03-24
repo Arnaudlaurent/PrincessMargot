@@ -1,0 +1,59 @@
+.footer {
+  background-color: orange;
+  color: #fff;
+  padding: 15px 20px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
+
+  .infos {
+
+    .title {
+      text-transform: uppercase;
+    }
+  
+    .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      .contact {
+
+        &:first-of-type {
+          margin-right: 5px;
+        }
+  
+        & > div {
+          display: flex;
+          align-items: flex-start;
+        }
+  
+        .mail {
+          padding: 10px 0 0;
+        }
+    
+        .icon {
+          min-width: 10px;
+          height: 10px;
+          background-color: #fff;
+          margin-right: 10px;
+        }
+    
+        .text {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .sitemap, .about {
+    ul {
+      padding: 0;
+      list-style-type: none;
+      font-size: 14px;
+    }
+  }
+
+}
