@@ -1,0 +1,150 @@
+.activity-detail {
+  padding: 20px 5px 10px;
+  .activity-title {
+    display: flex;
+
+    .activity-picto {
+      min-width: 100px;
+      height: 100px;
+      background: red;
+    }
+
+    .activity-name {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 20px;
+
+      .name-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        color: red;
+        padding-bottom: 10px;
+        @media screen and (min-width: 1024px) {
+          flex-direction: row;
+        }
+
+        .main-title {
+          font-size: 30px;
+        }
+
+        .sub-title {
+          
+          font-size: 11px;
+          @media screen and (min-width: 1024px) {
+            padding-left: 10px;
+          }
+        }
+      }
+
+      .creation-date {
+        font-size: 15px;
+        color: #ccc;
+      }
+    }
+  }
+
+  .activity-desc {
+    padding-top: 20px;
+
+    .intro {
+      padding-bottom: 10px;
+    }
+  }
+
+  .activity-infos {
+    padding-top: 20px;
+    .activity-date, .activity-place {
+      display: flex;
+      align-items: center;
+
+      .text {
+        padding-left: 20px;
+      }
+    }
+
+    .activity-date {
+      .picto {
+        min-width: 50px;
+        height: 50px;
+        background-color: red;
+      }
+    }
+
+    .activity-place {
+      padding-top: 20px;
+      .picto {
+        min-width: 50px;
+        height: 50px;
+        background-color: red;
+      }
+    }
+  }
+
+  .volunteers {
+    padding-top: 20px;
+
+    .volunteers-number {
+      display: flex;
+      align-items: center;
+
+      .picto {
+        width: 50px;
+        height: 50px;
+        background: red;
+      }
+
+      .text {
+        margin-left: 20px;
+        border-bottom: 2px solid red;
+      }
+    }
+
+    .volunteers-list {
+      padding-top: 20px;
+
+      .volunteer {
+        padding: 20px 0;
+        &:not(:last-of-type) {
+          border-bottom: 1px solid #000;
+        }
+      }
+      
+    }
+  }
+
+  .cta-wrapper {
+    padding: 20px 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+    }
+
+    .btn-pink {
+      padding: 15px 10px;
+      background: pink;
+      color: #fff;
+      text-transform: uppercase;
+      border-radius: 5px;
+      cursor: pointer;
+      max-width: 230px;
+      width: 230px;
+      text-align: center;
+
+      &:first-of-type {
+        margin-bottom: 20px;
+        @media screen and (min-width: 1024px) {
+          margin-bottom: 0;
+        }
+      }
+
+      &:hover {
+        background: red;
+      }
+    }
+  }
+}
