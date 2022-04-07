@@ -4,7 +4,12 @@
     text-align: center;
   }
 
+  select {
+    padding: 10px;
+  }
+
   textarea {
     white-space: pre;
+    resize: none;
   }
 }
